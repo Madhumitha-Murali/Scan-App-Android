@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textStyle="bold"
+        android:text="SELECT THE TYPE OF SCANNER : "
+        android:gravity="center"
+
+        />
+
+    <Spinner
+        android:id="@+id/aSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/Text1"
+        android:entries="@array/Spinner_items"
+        />
+
+    <TextView
+        android:id="@+id/Text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:layout_below="@id/aSpinner"
+        android:text="Tap on any of the buttons to enable/disable the scanner "
+
+        />
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/Text2"
+        android:layout_marginTop="25dp"
+        android:text="  Bar Code / EAN   "
+        android:textAllCaps="false"/>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_toRightOf="@id/button1"
+        android:layout_marginTop="35dp"
+        android:layout_below="@id/Text2"
+        android:checked="false"
+        android:thumb="@drawable/round_thumb"
+        android:track="@drawable/round_track">
+
+
+    </Switch>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/switch1"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="35dp"
+        android:layout_below="@id/Text2"
+        android:id="@+id/Text3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/button1"
+        android:text="  CODE 93   "
+        android:textAllCaps="false"/>
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_toRightOf="@id/button2"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/switch1"
+        android:checked="false"
+        android:thumb="@drawable/round_thumb"
+        android:track="@drawable/round_track">
+
+
+    </Switch>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/switch2"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="45dp"
+        android:layout_below="@id/Text3"
+        android:id="@+id/Text4"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/button2"
+        android:text="  Data Matrix / UID   "
+        android:textAllCaps="false"/>
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_toRightOf="@id/button3"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/switch2"
+        android:checked="false"
+        android:thumb="@drawable/round_thumb"
+        android:track="@drawable/round_track">
+
+
+    </Switch>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/switch3"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="45dp"
+        android:layout_below="@id/Text4"
+        android:id="@+id/Text5"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/button3"
+        android:text="RESET"
+        android:textAllCaps="false"/>
+
+    <ImageView
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_below="@id/button4"
+        android:id="@+id/img1"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

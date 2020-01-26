@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ScanEasy</string>
+    <string-array name="Spinner_items">
+        <item>Select the Scanner</item>
+        <item>CTS Wired</item>
+        <item>CTS Wireless</item>
+        <item>ZEBRA</item>
+    </string-array>
+
+</resources>
